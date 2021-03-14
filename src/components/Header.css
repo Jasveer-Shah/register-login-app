@@ -1,0 +1,13 @@
+.Header__main{
+    background-color: rgb(52, 52, 177);
+    height:400px;
+    display: flex;
+    width: 100%;
+
+}
+
+.dashboardmore {
+    display:flex;
+     max-width: 50%;
+    flex: 0 0 50%;
+}
