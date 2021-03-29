@@ -1,30 +1,29 @@
-.container {
-    background-color: transparent;
-    opacity: 0.3;
-  
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 995px;
-    width: 95%;
-    margin-top: -4.5rem!important;
-    border-radius: 10px;
-    padding-bottom: 30px;;
+.protected .container {
+  background-color: transparent;
+  opacity: 0.3;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 995px;
+  width: 95%;
+  margin-top: -4.5rem !important;
+  border-radius: 10px;
+  padding-bottom: 30px;
 }
 
-.Row1{
-    display:flex;
-    height: 513px;
-    width:100%;
-    background-color: rgb(208, 240, 237);
-    border-radius: 10px;
-    margin-bottom: 30px;
+.Row1 {
+  display: flex;
+  height: 513px;
+  width: 100%;
+  background-color: rgb(208, 240, 237);
+  border-radius: 10px;
+  margin-bottom: 30px;
 }
-.Row2{
-    display:flex;
-    height: 398px;
-    width:100%;
-    background-color: rgb(211, 173, 246);
-    border-radius: 10px;
-    
+.Row2 {
+  display: flex;
+  height: 398px;
+  width: 100%;
+  background-color: rgb(211, 173, 246);
+  border-radius: 10px;
 }
