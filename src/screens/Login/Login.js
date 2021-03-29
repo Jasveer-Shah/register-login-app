@@ -10,7 +10,7 @@ function Login() {
       <div className='header bg-gradient-primary py-7'>
         <div className="separator separator-skew separator-bottom zindex-100">
         <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
-          <polygon class="fill-default" points="2560 0 2560 100 0 100"></polygon>
+          <polygon className="fill-default" points="2560 0 2560 100 0 100"></polygon>
         </svg>
         </div>
       </div>
@@ -33,19 +33,6 @@ function Login() {
               </div>
             </div>
           </div>
-          {/* <div className='login__container'>
-            <div className='card__container'>
-              <div className='logo__container'>
-                <img src='/images/img_logotipo_bco.png' alt='logo' />
-              </div>
-              <div className='description'>
-                <h4>Login</h4>
-              </div>
-              <div className='form__container'>
-                <LoginForm />
-              </div>
-            </div>
-          </div> */}
         </div>
       </div>
       

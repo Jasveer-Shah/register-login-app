@@ -1,8 +1,9 @@
 import React from 'react';
 import { Formik, Form, Field, ErrorMessage} from 'formik';
-
+import { useHistory } from 'react-router-dom';
+import { ROUTE } from '../../../utils/routes';
 const LoginForm = () =>  {
-
+  const history = useHistory();
   return (
     <Formik
        initialValues={{ email: '', password: '' }}
@@ -19,7 +20,8 @@ const LoginForm = () =>  {
        }}
        onSubmit={(values, { setSubmitting }) => {
          setTimeout(() => {
-           alert(JSON.stringify(values, null, 2));
+           //alert(JSON.stringify(values, null, 2));
+           history.push(ROUTE.dashboard.path);
            setSubmitting(false);
          }, 400);
        }}
@@ -30,7 +32,7 @@ const LoginForm = () =>  {
               <div className="input-group input-group-alternative">
                 <div className="input-group-prepend">
                   <span className="input-group-text">
-                  <i class="ni ni-single-02"></i>
+                  <i className="ni ni-single-02"></i>
                   </span>
                 </div>
                 <Field className="form-control" type="email" name="email" />
@@ -41,7 +43,7 @@ const LoginForm = () =>  {
               <div className="input-group input-group-alternative">
                 <div className="input-group-prepend">
                   <span className="input-group-text">
-                  <i class="ni ni-single-02"></i>
+                  <i className="ni ni-single-02"></i>
                   </span>
                 </div>
                 <Field className="form-control"  type="password" name="password" />
