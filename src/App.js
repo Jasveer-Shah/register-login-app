@@ -1,22 +1,31 @@
 import React from 'react'; 
-import './App.css';
-import Sidebar from './Sidebar'
-import Header from './components/Header'
-import Container from './components/Container'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
+import './theme/styles.scss';
+import { Router, Switch, Route } from 'react-router-dom';
+import Dashboard from './screens/Dashboard/Dashboard';
+import Login from './screens/Login/Login';
+import history from './hub/history';
+
 function App() {
   return (
-    <div className="app">
-     <Sidebar/>
-     <div className= "Main__container">
-     <Navbar/>
-     <Header/>
-     <Container/>
-     <Footer/>
-     </div>
-     <div>Testing changes!</div>
-   </div>
+    
+    <Router history={history}>
+      <Switch>
+        <Route
+          exact
+          authState='access'
+          path={'/dashboard'}
+          component={Dashboard}
+          layout
+        />
+        <Route
+          exact
+          authState='initial'
+          path={'/'}
+          component={Login}
+          layout
+        />
+      </Switch>
+    </Router>      
   );
 }
 
